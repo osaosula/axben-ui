@@ -4,10 +4,7 @@ import Widget from "./_components/Widget";
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#FFFFFF]">
-      <div className="absolute top-0.5 left-[560px] w-[370px] h-[724px] flex flex-col gap-[5px] ">
-        <Watchlist />
-        <Widget />
-      </div>
+      <Watchlist />
     </main>
   );
 }

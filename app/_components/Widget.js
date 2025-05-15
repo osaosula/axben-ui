@@ -10,7 +10,7 @@ const inter = Inter({
 export default function Widget() {
   return (
     <div
-      className={`w-[370px] h-[236px] rounded-[30px] bg-black text-white p-5 flex flex-col justify-between ${inter.className} leading-[100%] tracking-[0]`}
+      className={`h-[236px] rounded-[30px] bg-black  p-5 flex flex-col justify-between ${inter.className} leading-[100%] tracking-[0]`}
     >
       {/* Header */}
       <div className="flex justify-between items-start">
