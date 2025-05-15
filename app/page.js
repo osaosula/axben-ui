@@ -3,7 +3,7 @@ import Widget from "./_components/Widget";
 
 export default function Home() {
   return (
-    <main className=" flex items-center justify-center min-h-screen bg-gray-900">
+    <main className=" flex items-center justify-center min-h-screen bg-[#FFFFFF]">
       <div className="w-[370px] h-[642px] flex flex-col space-y-4">
         <Watchlist />
         <Widget />
