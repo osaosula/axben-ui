@@ -2,6 +2,7 @@ import Image from "next/image";
 import { NavArrowDown, NavArrowRight, Plus } from "iconoir-react";
 import { Inter, Geist } from "next/font/google";
 import Widget from "./Widget";
+import WatchlistMenu from "./WatchlistMenu";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,8 +19,9 @@ export default function Watchlist() {
         className={`h-[483px] bg-black rounded-[30px] p-4 flex flex-col gap-[5px]`}
       >
         <div className="flex justify-between items-center mt-[29px] left-[19px] text-[15px]">
-          <h2 className="flex-nowrap">Watchlist</h2>
-          <NavArrowDown />
+          <div className="inline-flex">
+            <WatchlistMenu />
+          </div>
 
           <Plus className="w-[20px] h-[20px] " />
         </div>
@@ -32,7 +34,7 @@ export default function Watchlist() {
         </div>
 
         <div className="space-y-[5px] text-[13px]">
-          <div className="grid grid-cols-4 items-center top-[102px]">
+          <div className="grid grid-cols-4 gap-[22px] items-center top-[102px]">
             <div className=" col-span-1 flex items-center  w-[85px] h-[20px] left-[20px] ">
               <NavArrowRight />
               EUR / USD
@@ -40,8 +42,8 @@ export default function Watchlist() {
             <div className="relative text-[D8CCE8] left-[13px] w-[47px]">
               1.13322
             </div>
-            <div className="relative left-[33px] text-[#BCF7C0]">1.13322</div>
-            <div className="relative left-[53px]">14</div>
+            <div className="relative left-[27px] text-[#BCF7C0]">1.13322</div>
+            <div className="relative left-[42px]">14</div>
           </div>
 
           <div className="left-[20px]">GBP / USD</div>
