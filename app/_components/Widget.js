@@ -12,7 +12,6 @@ export default function Widget() {
     <div
       className={`h-[236px] rounded-[30px] bg-black  p-5 flex flex-col justify-between ${inter.className} leading-[100%] tracking-[0]`}
     >
-      {/* Header */}
       <div className="flex justify-between items-start">
         <div className="flex items-center space-x-2">
           <span>✨</span>
@@ -26,7 +25,6 @@ export default function Widget() {
         <SquareDashed className="w-[13.33px] h-[13.33px] top-[3.33] left-[3.33px]" />
       </div>
 
-      {/* Bottom Button */}
       <div className="flex justify-center">
         <button className="text-[15px]">Button Goes Here</button>
       </div>

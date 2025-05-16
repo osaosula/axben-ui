@@ -89,7 +89,7 @@ export default function WatchlistMenu() {
   const [hoverSubmenu, setHoverSubmenu] = useState(false);
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left py-1">
       <button
         onClick={() => setOpen(!open)}
         className="bg-transparent text-white text-[15px] font-medium rounded-md focus:outline-none"
@@ -127,7 +127,6 @@ export default function WatchlistMenu() {
               )
             )}
 
-            {/* Submenu item */}
             <div
               className="relative group"
               onMouseEnter={() => setHoverSubmenu(true)}
