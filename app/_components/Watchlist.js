@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { NavArrowDown, NavArrowRight, Plus } from "iconoir-react";
-import { Inter, Geist } from "next/font/google";
+import { NavArrowRight, Plus } from "iconoir-react";
+import { Inter } from "next/font/google";
 import Widget from "./Widget";
 import WatchlistMenu from "./WatchlistMenu";
+import WatchlistSection from "./WatchlistSection";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -50,8 +51,7 @@ export default function Watchlist() {
           <div>GBP / AUD</div>
 
           <div className="flex items-center top-[191px] left-[40px]">
-            <NavArrowRight />
-            Section
+            <WatchlistSection />
           </div>
         </div>
       </div>
