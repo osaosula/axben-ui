@@ -26,7 +26,7 @@ export default function CurrencyList() {
           <div
             key={index}
             onClick={() => setSelectedIndex(index)}
-            className={`group cursor-pointer hover:bg-gray-900 transition w-fit py-1 ${
+            className={`group cursor-pointer hover:bg-black transition w-fit py-1 ${
               isSelected ? "relative" : ""
             }`}
           >
