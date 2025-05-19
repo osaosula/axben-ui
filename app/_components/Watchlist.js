@@ -59,7 +59,7 @@ export default function Watchlist() {
     <div
       ref={containerRef}
       className={clsx(
-        "resize-x overflow-hidden absolute text-[#FFFFFF] flex flex-col gap-[5px]",
+        "overflow-hidden absolute text-[#FFFFFF] flex flex-col gap-[5px]",
         inter.className
       )}
       style={{
