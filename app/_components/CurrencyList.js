@@ -18,7 +18,7 @@ export default function CurrencyList() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <div className="bg-black text-white  ">
+    <div className=" text-white  ">
       {mockData.map((item, index) => {
         const isSelected = selectedIndex === index;
 
@@ -26,7 +26,7 @@ export default function CurrencyList() {
           <div
             key={index}
             onClick={() => setSelectedIndex(index)}
-            className={`group cursor-pointer hover:bg-black transition w-fit py-1 ${
+            className={`group cursor-pointer transition w-fit py-1 ${
               isSelected ? "relative" : ""
             }`}
           >

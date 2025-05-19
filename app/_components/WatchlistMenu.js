@@ -4,10 +4,9 @@ import {
   ArrowRightTagSolid,
   EditPencil,
   KeyframeAlignHorizontal,
+  Menu,
   NavArrowDown,
   NavArrowUp,
-  Playlist,
-  PlaylistPlay,
   PlaylistPlus,
   Trash,
 } from "iconoir-react";
@@ -106,7 +105,7 @@ export default function WatchlistMenu() {
         )}
       </button>
       {open && (
-        <div className="absolute mt-2 w-[155px] origin-top-right bg-black z-50">
+        <div className="absolute mt-2 w-[155px] origin-top-right z-50">
           <div className="py-1 text-white rounded-[10px] border-[#B3AEF5] backdrop-blur-[10px] border-dashed border-[1px]">
             {options.map((item, idx) =>
               item === "divider" ? (
@@ -120,7 +119,7 @@ export default function WatchlistMenu() {
                 <button
                   key={item.label}
                   onClick={() => handleAction(item.action)}
-                  className={`w-full text-left  gap-[14px] py-1 text-[13px] hover:bg-gray-800 ${inter.className}`}
+                  className={`w-full text-left  gap-[14px] py-1 text-[13px] hover:text-[#B3AEF5] ${inter.className}`}
                 >
                   {item.icon} <span className="ml-2">{item.label}</span>
                 </button>
@@ -133,20 +132,20 @@ export default function WatchlistMenu() {
               onMouseLeave={() => setHoverSubmenu(false)}
             >
               <button
-                className={`w-full text-left px-0.5 py-0.5 text-[13px] hover:bg-gray-800 ${inter.className}`}
+                className={`w-full text-left  py-0.5 text-[13px] hover:text-[#B3AEF5] ${inter.className}`}
               >
-                <PlaylistPlay className="inline-block h-[15px] w-[15px]" />{" "}
+                <Menu className="inline-block h-[15px] w-[15px]" />{" "}
                 <span className="ml-2">My Lists</span>
               </button>
               <div className="border-b border-[#B3AEF5] border-dashed " />
               <div className="py-1"></div>
               {hoverSubmenu && (
-                <div className="absolute left-full top-0 w-[132px] bg-black border-[#B3AEF5] border-dashed rounded-[10px] border-[1px] shadow-lg z-50">
+                <div className="absolute left-full top-0 w-[132px] border-[#B3AEF5] border-dashed rounded-[10px] border-[1px] shadow-lg z-50">
                   {subOptions.map((subItem) => (
                     <button
                       key={subItem.label}
                       onClick={() => handleAction(subItem.action)}
-                      className={`inline-flex items-center justify-between w-full px-1 py-1  text-white hover:bg-gray-800 ${inter.className} text-[13px]`}
+                      className={`inline-flex items-center justify-between w-full px-1 py-1  text-white hover:text-[#B3AEF5] ${inter.className} text-[13px]`}
                     >
                       <span>{subItem.label}</span> <span>{subItem.icon}</span>
                     </button>
