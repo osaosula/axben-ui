@@ -21,7 +21,7 @@ export default function Watchlist() {
   const containerRef = useRef(null);
 
   const minWidth = 323;
-  const maxWidth = 475;
+  const maxWidth = 457;
   const collapsedWidth = 8;
   const collapsedHeight = 105;
   const expandedHeight = 724;
