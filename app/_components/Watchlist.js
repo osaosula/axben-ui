@@ -17,7 +17,7 @@ export default function Watchlist() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div
-      className={`resize-x overflow-auto absolute top-0.5 left-[560px] w-[370px] min-w-[323px] max-w-[475px] h-[724px] text-[#FFFFFF] flex flex-col gap-[5px] ${inter.className} leading-[100%] tracking-[0] align-middle`}
+      className={`resize-x overflow-hidden absolute top-0.5 left-[560px] w-[370px] min-w-[323px] max-w-[475px] h-[724px] text-[#FFFFFF] flex flex-col gap-[5px] ${inter.className} leading-[100%] tracking-[0] align-middle`}
     >
       <div className="text-black w-[20px] h-[20px] right-0.5">
         {/*Dark Mode Button*/}
