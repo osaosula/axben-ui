@@ -67,7 +67,7 @@ export default function Watchlist() {
         minWidth: "8px",
         maxWidth: `${maxWidth}px`,
         height: isCollapsed ? `${collapsedHeight}px` : `${expandedHeight}px`,
-        top: isCollapsed ? "50%" : "0.125rem",
+        top: isCollapsed ? "50%" : "",
         transform: isCollapsed ? "translateY(-50%)" : "none",
         left: isCollapsed ? "50%" : "560px",
         backgroundColor: isCollapsed ? "transparent" : "",
@@ -98,14 +98,14 @@ export default function Watchlist() {
           <div
             className={`h-[483px] bg-black rounded-[30px] p-4 flex flex-col gap-[5px]`}
           >
-            <div className="flex justify-between items-center mt-[29px] text-[15px]">
-              <div className="inline-flex py-1">
+            <div className="flex justify-between items-center top-[29px]  text-[15px] align-middle">
+              <div className="inline-flex py-2">
                 <WatchlistMenu />
               </div>
               <Plus className="w-[20px] h-[20px]" />
             </div>
 
-            <div className="grid grid-cols-4 h-[12px] gap-[76px] text-[10px] align-middle">
+            <div className=" grid grid-cols-4 h-[12px] top-[77px] left-[20px] gap-[76px] text-[10px] align-middle mt-2">
               <div>Symbol</div>
               <div>Bid</div>
               <div>Ask</div>

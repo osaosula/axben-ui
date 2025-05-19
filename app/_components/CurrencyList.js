@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 import { Edit, Trash, NavArrowRight } from "iconoir-react";
+import { Inter } from "next/font/google";
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: "400",
+});
 const mockData = [
   {
     symbol: "EUR / USD",
@@ -18,7 +24,7 @@ export default function CurrencyList() {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
-    <div className=" text-white  ">
+    <div className={`text-white ${inter.className}  `}>
       {mockData.map((item, index) => {
         const isSelected = selectedIndex === index;
 
